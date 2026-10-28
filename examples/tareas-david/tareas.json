@@ -1,0 +1,67 @@
+{
+  "project": "tareas-david",
+  "description": "Horario semanal de tareas (Lunes a Domingo). Cada tarea indica en que dias ocurre (`dias`), su hora de inicio y fin, prioridad y estado. De cada tarea surgen ideas que se desarrollan juntos.",
+  "version": "2.0.0",
+  "dias": [
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sabado",
+    "Domingo"
+  ],
+  "next_id": 15,
+  "priorities": {
+    "P0": "Urgente. Se hace ya.",
+    "P1": "Alta. Lo siguiente.",
+    "P2": "Media. Cuando haya hueco.",
+    "P3": "Baja. Algun dia / sin decidir."
+  },
+  "status": [
+    "backlog",
+    "doing",
+    "done",
+    "blocked"
+  ],
+  "tareas": [
+    {
+      "id": 1,
+      "title": "Ingles",
+      "dias": [
+        "Lunes",
+        "Martes",
+        "Miercoles",
+        "Jueves",
+        "Viernes",
+        "Sabado",
+        "Domingo"
+      ],
+      "inicio": "06:00",
+      "fin": "07:00",
+      "priority": "P3",
+      "status": "backlog",
+      "notes": "",
+      "ideas": []
+    },
+    {
+      "id": 8,
+      "title": "LinkedIn",
+      "dias": [
+        "Lunes",
+        "Martes",
+        "Miercoles",
+        "Jueves",
+        "Viernes",
+        "Sabado",
+        "Domingo"
+      ],
+      "inicio": "07:00",
+      "fin": "08:30",
+      "priority": "P0",
+      "status": "backlog",
+      "notes": "1 post + 3 comentarios al dia. Objetivo: posicionarse como referente. Foco: IA + SDD + harness-engineering. Idioma: espanol.",
+      "ideas": []
+    }
+  ]
+}

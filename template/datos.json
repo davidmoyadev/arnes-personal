@@ -1,0 +1,12 @@
+{
+  "project": "mi-proyecto",
+  "version": "1.0.0",
+  "descripcion": "Única fuente de verdad. Cámbiala por tu modelo de datos.",
+  "items": [
+    {
+      "id": 1,
+      "titulo": "Ejemplo de elemento",
+      "estado": "backlog"
+    }
+  ]
+}
