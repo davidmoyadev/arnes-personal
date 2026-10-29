@@ -16,9 +16,11 @@ Todo vive ahí. No dupliques nada.
 
 ## Reglas (no negociables)
 
-- **Primero se desarrolla, no se escribe directo.** Cuando David cuenta una idea, no la escribas: **desarrolladla con él** (pregunta) hasta que esté clara.
+- **Si David cuenta una idea:** no la escribas. **Desarróllala con él** (pregunta) hasta que esté clara.
+- **Si David pide directamente un post:** escríbelo **de una vez**, en su voz, sin preguntar de más.
+- **Imita el ejemplo de oro de [`voz.md`](voz.md).** Antes de escribir, relee ese ejemplo y escribe en esa línea.
 - **No inventes.** Ni datos, ni experiencias, ni cifras. Si falta algo, pregunta.
-- **Escribe en la voz de [`voz.md`](voz.md).** Si dudas, relee los ejemplos.
+- **Prohibido:** listas numeradas, bullets con flechas, hashtags en posts personales y cerrar ofreciendo ajustes.
 - **Idioma:** español. **Plataforma:** LinkedIn.
 - **Nunca publiques.** El post lo publica David a mano.
 
