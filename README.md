@@ -55,9 +55,13 @@ tú decides y corriges (no él)
 
 **La clave:** el agente no recuerda entre sesiones. El arnés sí.
 
-## La prueba
+## Identidad y aprendizaje
 
-[`prueba.md`](prueba.md) compara la misma petición **sin** arnés y **con** arnés, contando prompts. Sin arnés sale genérico (listas, flechas, hashtags); con arnés sale en tu voz, en 1 prompt.
+El núcleo lee [`usuario.json`](usuario.json) al arrancar: tu nombre y tus preferencias, para dirigirse a ti por tu nombre. Cuando corriges al agente o expresas una preferencia, te propone guardarla ahí (con fecha) y solo la escribe si confirmas.
+
+## Crear un módulo
+
+Pídele a tu agente **«crear nuevo módulo»**: te irá preguntando (nombre, para qué, disparadores, rol, fuente de verdad, reglas y flujo), cada una con una propuesta por defecto. Él copia `modulos/_plantilla/`, lo rellena y lo registra en `AGENTS.md`.
 
 ## Licencia
 
