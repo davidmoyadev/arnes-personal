@@ -70,3 +70,18 @@ Si te pide cambiar las **reglas** de un módulo (añadir, quitar, ajustar):
 1. Pregunta **qué** cambiar y **por qué**. No inventes.
 2. Edita su `MODULO.md` (y su fuente de verdad, si toca).
 3. Confirma en una o dos líneas.
+
+## Eliminar un módulo
+
+Cuando el humano diga **«elimina el módulo X»**:
+
+> Es **irreversible**. El humano manda, pero confirma antes de borrar.
+
+1. Comprueba que el módulo existe. Si no, dilo y **no hagas nada**.
+2. **Pregunta antes de tocar nada:** ¿borro también su fuente de verdad o la conservas? Pide **confirmación explícita** («sí, bórralo»).
+3. Si confirma:
+   - Borra la carpeta `modulos/<nombre>/`.
+   - Quítalo del `AGENTS.md` de la raíz (fila en *Módulos disponibles* y palabras clave en *Cómo enrutar*).
+4. Confirma en una línea («Módulo `X` eliminado»).
+
+**Nunca borres `modulos/_plantilla/`.**
