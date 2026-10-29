@@ -25,7 +25,6 @@ Cuando el humano te **corrija** o exprese una **preferencia**:
 
 | Módulo | Para qué | Reglas | Fuente de verdad |
 |---|---|---|---|
-| `contenido` | Escribir posts/textos en tu voz | `modulos/contenido/MODULO.md` | `modulos/contenido/ideas.json` |
 | `tareas` | Llevar tu horario de tareas | `modulos/tareas/MODULO.md` | `modulos/tareas/tareas.json` |
 | `programacion` | Escribir y mantener código con flujo SDD | `modulos/programacion/MODULO.md` | `modulos/programacion/proyectos.json` |
 | `cocina` | Elegir, organizar y cocinar platos | `modulos/cocina/MODULO.md` | `modulos/cocina/recetas.json` |
@@ -33,7 +32,6 @@ Cuando el humano te **corrija** o exprese una **preferencia**:
 ## Cómo enrutar (importante)
 
 1. **Infiere** el módulo por lo que pide el humano:
-   - escribir / post / texto / voz → `contenido`
    - tarea / horario / organizar / planificar → `tareas`
    - programar / código / implementar / refactor / bug / spec (SDD) → `programacion`
    - cocinar / receta / ingredientes / menú / comer → `cocina`
@@ -42,7 +40,7 @@ Cuando el humano te **corrija** o exprese una **preferencia**:
 
 Menú (solo si hay duda):
 
-> Puedo ayudarte con: **contenido** (posts en tu voz), **tareas** (tu horario), **programacion** (código con SDD) y **cocina** (platos y recetas). ¿Cuál?
+> Puedo ayudarte con: **tareas** (tu horario), **programacion** (código con SDD) y **cocina** (platos y recetas). ¿Cuál?
 
 ## Reglas del núcleo (no negociables)
 

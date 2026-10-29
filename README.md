@@ -18,14 +18,15 @@ El agente no recuerda entre sesiones. El arnés sí: lo escribes una vez y deja 
 
 1. Clona el repo y **ábrelo como carpeta del proyecto** (la raíz, no una subcarpeta).
 2. Habla con tu agente con normalidad: él **infiere el módulo** y carga sus reglas.
-3. Adáptalo a ti: edita `modulos/contenido/voz.md`, `perfil.md`, etc.
+3. Adáptalo a ti: edita los ficheros de datos de cada módulo (`modulos/*/`).
 
 ## Módulos
 
 | Módulo | Para qué |
 |---|---|
-| [`contenido`](modulos/contenido/MODULO.md) | Escribir posts en tu voz (voz, perfil, banco de ideas). |
 | [`tareas`](modulos/tareas/MODULO.md) | Llevar tu horario semanal de tareas. |
+| [`programacion`](modulos/programacion/MODULO.md) | Escribir y mantener código con flujo SDD. |
+| [`cocina`](modulos/cocina/MODULO.md) | Elegir, organizar y cocinar platos. |
 
 El núcleo (`AGENTS.md`) es el router: **infiere el módulo** por lo que pides y **solo carga ese**. Si duda, te pregunta con un menú de una línea.
 
