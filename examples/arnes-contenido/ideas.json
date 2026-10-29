@@ -1,0 +1,21 @@
+{
+  "project": "arnes-contenido-david",
+  "version": "1.0.0",
+  "descripcion": "Banco de ideas de contenido. Única fuente de verdad.",
+  "ideas": [
+    {
+      "id": "1",
+      "titulo": "Post: personal-harness (domar la IA)",
+      "tema": "IA",
+      "estado": "borrador",
+      "notas": "Arco: miedo -> personal-harness -> control -> liberacion."
+    },
+    {
+      "id": "2",
+      "titulo": "Repo arnes-personal como prueba del método",
+      "tema": "IA",
+      "estado": "en curso",
+      "notas": "El post enlaza al repo público."
+    }
+  ]
+}

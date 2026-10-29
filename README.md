@@ -34,9 +34,10 @@ El agente no recuerda entre sesiones. El arnés sí. Lo escribes una vez y deja 
 
 [`demo/demo.md`](demo/demo.md) compara la misma tarea sin arnés y con arnés, contando prompts. La métrica es clara: menos prompts para el mismo resultado.
 
-## Ejemplo real
+## Ejemplos
 
-[`examples/tareas-david/`](examples/tareas-david/) es un arnés real en producción: un horario semanal de tareas. Es un extracto del arnés del autor (en el original todo vive bajo `.harness/`). Todo lo que hay en este repo salió de ahí.
+- [`examples/tareas-david/`](examples/tareas-david/): un arnés real en producción — un horario semanal de tareas. Es un extracto del arnés del autor (en el original todo vive bajo `.harness/`).
+- [`examples/arnes-contenido/`](examples/arnes-contenido/): un arnés de contenido — convierte ideas en posts en la voz del autor, sin adivinar y con el control en él. Es el caso que prueba la promesa de este repo.
 
 ## Cómo funciona
 
