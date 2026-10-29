@@ -2,50 +2,40 @@
 
 **Tu criterio escrito, para que la IA no adivine.**
 
-Un *arnés personal* es un puñado de ficheros donde dejas por escrito cómo quieres que trabaje tu agente: su rol, sus reglas y tu única fuente de verdad. No es un framework de empresa ni una config compartida. Son tus reglas, tu criterio.
+Un *arnés personal* es un puñado de ficheros donde dejas por escrito cómo quieres que trabaje tu agente: su rol, sus reglas y tu única fuente de verdad. Este repo es un arnés **modular**: un núcleo y varios módulos, uno por necesidad.
 
-Se apoya en `AGENTS.md`, una convención abierta que leen opencode, Claude Code, Cursor y otros. Tu agente lo lee al empezar la sesión. Deja de adivinar y deja de obligarte a repetir el mismo prompt cada día.
+Se apoya en `AGENTS.md`, una convención abierta que leen opencode, Claude Code, Cursor y otros. Tu agente lo lee al arrancar la sesión.
 
 ## El problema
 
 El agente no entiende la profundidad de lo que le pides. Lo resuelves repitiendo prompts.
 
-Muchos prompts = el agente adivinando lo que tú ya sabías.
-
-## La idea
-
 > Cada prompt que repites es una regla que no habías escrito.
 
-El agente no recuerda entre sesiones. El arnés sí. Lo escribes una vez y deja de adivinar.
-
-## Qué no es
-
-- No es magia: no entrenas el modelo.
-- No es un framework de empresa.
-- No sustituye tu criterio: lo escribe.
+El agente no recuerda entre sesiones. El arnés sí: lo escribes una vez y deja de adivinar.
 
 ## Quickstart
 
-1. Copia la carpeta [`template/`](template/) a tu proyecto.
-2. Edita [`template/AGENTS.md`](template/AGENTS.md): rol, reglas y fuente de verdad.
-3. Abre el proyecto con tu agente. Ya está: lo leerá al arrancar.
+1. Clona el repo y **ábrelo como carpeta del proyecto** (la raíz, no una subcarpeta).
+2. Habla con tu agente con normalidad: él **infiere el módulo** y carga sus reglas.
+3. Adáptalo a ti: edita `modulos/contenido/voz.md`, `perfil.md`, etc.
 
-## La prueba
+## Módulos
 
-[`demo/demo.md`](demo/demo.md) compara la misma tarea sin arnés y con arnés, contando prompts. La métrica es clara: menos prompts para el mismo resultado.
+| Módulo | Para qué |
+|---|---|
+| [`contenido`](modulos/contenido/MODULO.md) | Escribir posts en tu voz (voz, perfil, banco de ideas). |
+| [`tareas`](modulos/tareas/MODULO.md) | Llevar tu horario semanal de tareas. |
 
-## Ejemplos
-
-- [`examples/tareas-david/`](examples/tareas-david/): un arnés real en producción — un horario semanal de tareas. Es un extracto del arnés del autor (en el original todo vive bajo `.harness/`).
-- [`examples/arnes-contenido/`](examples/arnes-contenido/): un arnés de contenido — convierte ideas en posts en la voz del autor, sin adivinar y con el control en él. Es el caso que prueba la promesa de este repo. **Ábrelo como carpeta raíz** (`AGENTS.md` solo se carga desde la raíz del proyecto).
+El núcleo (`AGENTS.md`) es el router: **infiere el módulo** por lo que pides y **solo carga ese**. Si duda, te pregunta con un menú de una línea.
 
 ## Cómo funciona
 
 Un arnés es **dos piezas y un momento**:
 
-1. **El momento:** tu agente lee `AGENTS.md` automáticamente **al arrancar cada sesión**. No se lo pides; es lo primero que ve.
-2. **`AGENTS.md` (las reglas):** quién es el agente, qué no puede romper y dónde está la verdad. Es tu criterio, escrito.
-3. **La fuente de verdad (los datos):** un único fichero con todo el estado. El agente lo lee y lo edita; todo lo demás cuelga de ahí.
+1. **El momento:** tu agente lee `AGENTS.md` automáticamente al arrancar cada sesión.
+2. **Las reglas:** el núcleo + el `MODULO.md` del módulo que toque.
+3. **La fuente de verdad:** un único fichero de datos por módulo con todo el estado.
 
 El bucle, en 4 pasos:
 
@@ -53,24 +43,20 @@ El bucle, en 4 pasos:
 tú escribes las reglas (una vez)
         │
         ▼
-el agente lee AGENTS.md al arrancar la sesión
+el agente lee AGENTS.md al arrancar
         │
         ▼
-ejecuta la tarea siguiendo esas reglas
+infiere el módulo y ejecuta la tarea
         │
         ▼
 tú decides y corriges (no él)
 ```
 
-**La clave:** el agente no recuerda entre sesiones. El arnés sí. Por eso funciona: cada sesión empieza ya sabiendo lo que quieres, sin que se lo repitas.
+**La clave:** el agente no recuerda entre sesiones. El arnés sí.
 
-**Un ejemplo real** (sacado de [`examples/tareas-david/AGENTS.md`](examples/tareas-david/AGENTS.md)):
+## La prueba
 
-> «Primero se desarrolla, no se escribe directo.»
-
-Esa regla provoca que, cuando le cuentas una idea, el agente **no la escriba directo**: la desarrolla contigo. Sin esa línea la escribiría y tú tendrías que corregirle. **Una regla escrita = un prompt que no repites.**
-
-El patrón: **el humano escribe las reglas; el agente las ejecuta.**
+[`prueba.md`](prueba.md) compara la misma petición **sin** arnés y **con** arnés, contando prompts. Sin arnés sale genérico (listas, flechas, hashtags); con arnés sale en tu voz, en 1 prompt.
 
 ## Licencia
 

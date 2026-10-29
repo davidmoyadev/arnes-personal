@@ -6,11 +6,11 @@ Con el arnés, la misma petición exige **menos prompts** para un post en la voz
 
 ## ⚠️ Dónde abrir el agente (esto fue el fallo de las primeras pruebas)
 
-El agente **solo carga `AGENTS.md` desde la carpeta raíz del proyecto**. Abre **esta carpeta** (`examples/arnes-contenido/`) como raíz, **no** la raíz del repo. Si abres la raíz del repo, el arnés **no se carga** y el resultado sale genérico (parecerá que el arnés no funciona).
+El agente **solo carga `AGENTS.md` desde la carpeta raíz del proyecto**. Abre la **raíz de este repo** (donde está `AGENTS.md`), **no** una subcarpeta. Si abres una subcarpeta (por ejemplo `modulos/`), el núcleo **no se carga** y el resultado sale genérico (parecerá que el arnés no funciona).
 
 ## Material
 
-- **Arnés:** esta carpeta (`examples/arnes-contenido/`).
+- **Arnés:** la raíz de este repo (el núcleo cargará el módulo `contenido`).
 - **Control:** una carpeta **vacía**, sin `AGENTS.md`.
 
 ## Reglas del experimento
@@ -32,7 +32,7 @@ El agente **solo carga `AGENTS.md` desde la carpeta raíz del proyecto**. Abre *
 
 ## Brazo B — con arnés
 
-1. Abre **`examples/arnes-contenido/`** con tu agente.
+1. Abre la **raíz de este repo** con tu agente.
 2. Envía el prompt fijo.
 3. Cuenta los prompts hasta tener algo que publicarías.
 
@@ -43,10 +43,10 @@ El agente **solo carga `AGENTS.md` desde la carpeta raíz del proyecto**. Abre *
 | A — sin arnés | 1 (+ ofrece ajustes) | No | Genérico: flechas `→`, hashtags `#IA…`, cierra «¿Quieres una versión…?». |
 | B — con arnés (×2) | 1 | Sí | Sin flechas ni hashtags; cierre «De momento, sigo aquí. Escribiendo las reglas». Lee `voz.md`, `perfil.md`, `ideas.json`. |
 
-> Confirmado por David ejecutándolo desde `examples/arnes-contenido/`.
+> Confirmado por David ejecutándolo desde la raíz del repo (módulo `contenido`).
 
 ## Cómo leerlo
 
 - Si **B** necesita menos prompts **y** respeta la voz sin que se la expliques → el arnés funciona.
-- Si **B** sale con una voz genérica → **primero comprueba que abriste `examples/arnes-contenido/`**; si ya lo hiciste, hay que ajustar `voz.md`.
+- Si **B** sale con una voz genérica → **primero comprueba que abriste la raíz del repo**; si ya lo hiciste, hay que ajustar `voz.md`.
 - Repítelo **3 veces**: la IA no es determinista; un solo tiro no prueba nada.

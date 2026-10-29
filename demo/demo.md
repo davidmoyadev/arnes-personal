@@ -29,7 +29,7 @@ Resultado: **1 prompt**. La tarea entra con `dias`, `inicio`, `fin`, `priority` 
 ## Cómo reproducirlo
 
 1. Clona este repo.
-2. Abre `examples/tareas-david/` con tu agente.
+2. Abre la raíz de este repo con tu agente (el núcleo cargará el módulo `tareas`).
 3. Pídele la misma tarea.
 4. Cuenta los prompts.
 
