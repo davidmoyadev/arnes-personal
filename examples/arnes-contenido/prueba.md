@@ -36,14 +36,14 @@ El agente **solo carga `AGENTS.md` desde la carpeta raíz del proyecto**. Abre *
 2. Envía el prompt fijo.
 3. Cuenta los prompts hasta tener algo que publicarías.
 
-## Resultado observado (ejemplo real)
+## Resultado observado (confirmado por David)
 
-| Brazo | Nº de prompts | ¿Voz de David? | ¿Preguntó en vez de inventar? | Notas |
-|---|---|---|---|---|
-| A — sin arnés | 3–4 | No | No | Genérico: listas, hashtags, ofrece ajustes. |
-| B — con arnés (carpeta correcta) | 1 | Sí | — | Sin listas ni hashtags; cierre «De momento, sigo aquí». |
+| Brazo | Nº de prompts | ¿Voz de David? | Notas |
+|---|---|---|---|
+| A — sin arnés | 1 (+ ofrece ajustes) | No | Genérico: flechas `→`, hashtags `#IA…`, cierra «¿Quieres una versión…?». |
+| B — con arnés (×2) | 1 | Sí | Sin flechas ni hashtags; cierre «De momento, sigo aquí. Escribiendo las reglas». Lee `voz.md`, `perfil.md`, `ideas.json`. |
 
-> B ejecutado desde la carpeta correcta. Las primeras pruebas fallaron por abrir la raíz del repo.
+> Confirmado por David ejecutándolo desde `examples/arnes-contenido/`.
 
 ## Cómo leerlo
 
