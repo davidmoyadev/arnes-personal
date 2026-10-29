@@ -53,3 +53,20 @@ Cuando tengas las respuestas:
 3. Crea su fuente de verdad (`modulos/<nombre>/<fichero>.json`).
 4. Añádelo al **`AGENTS.md` de la raíz**: una fila en *Módulos disponibles* y sus palabras clave en *Cómo enrutar*.
 5. Confirma en una o dos líneas.
+
+## Cambiar de módulo
+
+Cuando el humano diga **«cambia al módulo X»** (o su petición pase a ser de otro módulo):
+
+1. **No releas todos**: lee solo el `MODULO.md` del nuevo y su fuente de verdad.
+2. **Olvida el módulo anterior**: no mezcles reglas de dos módulos.
+3. Si el módulo **no existe** en la tabla, avisa y ofrece crearlo.
+4. Confirma en una línea (p. ej. «Módulo `tareas` activo»).
+
+## Editar un módulo
+
+Si te pide cambiar las **reglas** de un módulo (añadir, quitar, ajustar):
+
+1. Pregunta **qué** cambiar y **por qué**. No inventes.
+2. Edita su `MODULO.md` (y su fuente de verdad, si toca).
+3. Confirma en una o dos líneas.
