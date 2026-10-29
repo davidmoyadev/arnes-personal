@@ -1,0 +1,26 @@
+{
+  "project": "programacion",
+  "version": "1.0.0",
+  "descripcion": "Única fuente de verdad del módulo: proyectos de usuario, cada uno con su repo, su spec (SDD) y su estado.",
+  "status": [
+    "backlog",
+    "doing",
+    "done",
+    "blocked"
+  ],
+  "next_id": 2,
+  "proyectos": [
+    {
+      "id": 1,
+      "nombre": "contactos",
+      "ruta": "apps/contactos/",
+      "status": "done",
+      "spec": "App web (HTML/JS/CSS) para gestionar contactos. Datos en localStorage. Campos: nombre, telefono, email, notas. Acciones: anadir, listar, editar, borrar y buscar.",
+      "tareas": [
+        "index.html: formulario + lista + buscador",
+        "app.js: CRUD y persistencia en localStorage",
+        "styles.css: estilos base"
+      ]
+    }
+  ]
+}

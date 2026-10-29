@@ -1,0 +1,36 @@
+{
+  "project": "cocina",
+  "version": "1.0.0",
+  "descripcion": "Única fuente de verdad del módulo: recetas de usuario (nombre, ingredientes, pasos, tiempo, dificultad) y menús.",
+  "dificultad": [
+    "facil",
+    "media",
+    "dificil"
+  ],
+  "next_id": 2,
+  "recetas": [
+    {
+      "id": 1,
+      "nombre": "Macarrones a la boloñesa",
+      "raciones": 4,
+      "dificultad": "facil",
+      "tiempo": "35 min",
+      "ingredientes": [
+        "400 g de macarrones",
+        "400 g de carne picada",
+        "1 cebolla",
+        "2 dientes de ajo",
+        "800 g de tomate triturado",
+        "Aceite de oliva, sal, pimienta, orégano",
+        "Queso rallado (opcional)"
+      ],
+      "pasos": [
+        "Sofríe la cebolla y el ajo picados en aceite, ~5 min.",
+        "Añade la carne y dórala, ~8 min.",
+        "Echa el tomate, sal, pimienta y orégano; cuece a fuego lento 15-20 min.",
+        "Cuece los macarrones en agua con sal según el paquete (9-11 min).",
+        "Mezcla la pasta con la salsa y sirve con queso por encima."
+      ]
+    }
+  ]
+}

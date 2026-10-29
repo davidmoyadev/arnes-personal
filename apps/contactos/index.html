@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Contactos</h1>
+
+    <form id="form-contacto" class="form" autocomplete="off">
+      <input type="hidden" id="contacto-id">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="tel" id="telefono" placeholder="Telefono">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="notas" placeholder="Notas">
+      <div class="acciones-form">
+        <button type="submit" id="btn-guardar">Anadir</button>
+        <button type="button" id="btn-cancelar" hidden>Cancelar</button>
+      </div>
+    </form>
+
+    <input type="search" id="buscar" placeholder="Buscar...">
+    <ul id="lista-contactos" class="lista"></ul>
+    <p id="vacio" class="vacio">No hay contactos todavia.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
