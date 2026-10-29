@@ -37,7 +37,7 @@ El agente no recuerda entre sesiones. El arnés sí. Lo escribes una vez y deja 
 ## Ejemplos
 
 - [`examples/tareas-david/`](examples/tareas-david/): un arnés real en producción — un horario semanal de tareas. Es un extracto del arnés del autor (en el original todo vive bajo `.harness/`).
-- [`examples/arnes-contenido/`](examples/arnes-contenido/): un arnés de contenido — convierte ideas en posts en la voz del autor, sin adivinar y con el control en él. Es el caso que prueba la promesa de este repo.
+- [`examples/arnes-contenido/`](examples/arnes-contenido/): un arnés de contenido — convierte ideas en posts en la voz del autor, sin adivinar y con el control en él. Es el caso que prueba la promesa de este repo. **Ábrelo como carpeta raíz** (`AGENTS.md` solo se carga desde la raíz del proyecto).
 
 ## Cómo funciona
 
