@@ -40,10 +40,34 @@ El agente no recuerda entre sesiones. El arnés sí. Lo escribes una vez y deja 
 
 ## Cómo funciona
 
-| Fichero | Qué contiene |
-|---|---|
-| `AGENTS.md` | Rol, reglas no negociables y arranque. |
-| fuente de verdad | Un único fichero de datos con todo el estado. |
+Un arnés es **dos piezas y un momento**:
+
+1. **El momento:** tu agente lee `AGENTS.md` automáticamente **al arrancar cada sesión**. No se lo pides; es lo primero que ve.
+2. **`AGENTS.md` (las reglas):** quién es el agente, qué no puede romper y dónde está la verdad. Es tu criterio, escrito.
+3. **La fuente de verdad (los datos):** un único fichero con todo el estado. El agente lo lee y lo edita; todo lo demás cuelga de ahí.
+
+El bucle, en 4 pasos:
+
+```text
+tú escribes las reglas (una vez)
+        │
+        ▼
+el agente lee AGENTS.md al arrancar la sesión
+        │
+        ▼
+ejecuta la tarea siguiendo esas reglas
+        │
+        ▼
+tú decides y corriges (no él)
+```
+
+**La clave:** el agente no recuerda entre sesiones. El arnés sí. Por eso funciona: cada sesión empieza ya sabiendo lo que quieres, sin que se lo repitas.
+
+**Un ejemplo real** (sacado de [`examples/tareas-david/AGENTS.md`](examples/tareas-david/AGENTS.md)):
+
+> «Primero se desarrolla, no se escribe directo.»
+
+Esa regla provoca que, cuando le cuentas una idea, el agente **no la escriba directo**: la desarrolla contigo. Sin esa línea la escribiría y tú tendrías que corregirle. **Una regla escrita = un prompt que no repites.**
 
 El patrón: **el humano escribe las reglas; el agente las ejecuta.**
 
