@@ -4,7 +4,13 @@
 
 ## El ejemplo de oro
 
-**Así se escribe. Imítalo (no lo copies):**
+**Así se escribe. Imita el estilo, no las palabras.**
+
+- Copia el **ritmo, el tono y la estructura** (frases cortas, una idea por línea, cierre rotundo).
+- **NO** copies el arranque («Aunque me duela reconocerlo…») ni frases concretas de aquí.
+- Empieza cada post con un gancho **distinto** y propio.
+
+Ejemplo:
 
 > Aunque me duela reconocerlo, casi ya no pico código. Lo hace un agente.
 >
